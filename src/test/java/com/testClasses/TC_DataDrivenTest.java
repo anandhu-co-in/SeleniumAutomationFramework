@@ -14,7 +14,6 @@ public class TC_DataDrivenTest {
         System.out.println("Executing with "+data1+" "+data2);
     }
 
-
     @DataProvider(name="LoginData")
     Object[][] getData() throws IOException {
 
