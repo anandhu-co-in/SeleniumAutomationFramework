@@ -2,8 +2,8 @@ package com.testClasses;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.utilities.ReadConfig;
 import org.apache.commons.io.FileUtils;
@@ -25,7 +25,7 @@ public class BaseClass {
     public static Logger logger;
     public static ExtentTest extendReportLogger;
 
-    public static ExtentHtmlReporter htmlReporter;
+    ExtentSparkReporter spark;
     public static ExtentReports extent;
 
     ReadConfig readconfig = new ReadConfig();
@@ -59,28 +59,20 @@ public class BaseClass {
         driver.quit();
     }
 
-
     //Create Report
-    public void createExtendReport() {
+    public void createExtendReport()  {
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
         String repName = "Test-Report-" + timeStamp + ".html";
-
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/TestResults/" + repName);//specify location of the report
-        htmlReporter.loadXMLConfig(System.getProperty("user.dir") + "/extent-config.xml");
-
+        ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/TestResults/" + repName);
         extent = new ExtentReports();
-
-        extent.attachReporter(htmlReporter);
+        extent.attachReporter(spark);
         extent.setSystemInfo("Host name", "localhost");
         extent.setSystemInfo("Environemnt", "QA");
         extent.setSystemInfo("user", "Anandhu");
-
-        htmlReporter.config().setDocumentTitle("Test Execution Results"); // Tile of report
-        htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
-        htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
-        htmlReporter.config().setTheme(Theme.STANDARD);
+        spark.config().setDocumentTitle("Test Execution Results"); // Tile of report
+        spark.config().setReportName("Functional Test Automation Report"); // name of the report
+        spark.config().setTheme(Theme.STANDARD);
     }
-
 
     //Utility Methods
     public void captureScreen(WebDriver driver, String tname) throws IOException {

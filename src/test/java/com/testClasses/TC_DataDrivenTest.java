@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class TC_DataDrivenTest {
+public class TC_DataDrivenTest extends BaseClass {
 
 
     @Test(dataProvider = "LoginData")
