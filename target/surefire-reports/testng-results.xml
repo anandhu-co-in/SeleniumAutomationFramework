@@ -1,95 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-02T16:19:07 IST" name="MyAutomationSuit" finished-at="2021-03-02T16:19:46 IST" duration-ms="39229">
+  <suite started-at="2021-03-03T16:17:46 IST" name="MyAutomationSuit" finished-at="2021-03-03T16:18:03 IST" duration-ms="16808">
     <groups>
     </groups>
-    <test started-at="2021-03-02T16:19:07 IST" name="MyTest" finished-at="2021-03-02T16:19:29 IST" duration-ms="22307">
-      <class name="com.testClasses.TC_DataDrivenTest">
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@50a7bc6e]" started-at="2021-03-02T16:19:29 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:29 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr164225]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jahetAp]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-03-03T16:17:46 IST" name="MyCounterTest" finished-at="2021-03-03T16:18:03 IST" duration-ms="16808">
+      <class name="com.testClasses.TC_AzureWebAppTest">
+        <test-method is-config="true" signature="suitStartSetup()[pri:0, instance:com.testClasses.TC_AzureWebAppTest@214b199c]" started-at="2021-03-03T16:17:45 IST" name="suitStartSetup" finished-at="2021-03-03T16:17:46 IST" duration-ms="882" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@50a7bc6e]" started-at="2021-03-02T16:19:29 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:29 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr83460]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qAbUzyj]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@50a7bc6e]" started-at="2021-03-02T16:19:29 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:29 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr137319]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[bAdYvyb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@50a7bc6e]" started-at="2021-03-02T16:19:29 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:29 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr164225]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jahetAp]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@50a7bc6e]" started-at="2021-03-02T16:19:29 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:29 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr112909]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tytUreg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-      </class> <!-- com.testClasses.TC_DataDrivenTest -->
-      <class name="com.testClasses.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.testClasses.TC_LoginTest_001@691a7f8f]" started-at="2021-03-02T16:19:07 IST" name="setup" finished-at="2021-03-02T16:19:18 IST" duration-ms="10681" status="PASS">
+        </test-method> <!-- suitStartSetup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.testClasses.TC_AzureWebAppTest@214b199c]" started-at="2021-03-03T16:17:46 IST" name="setup" finished-at="2021-03-03T16:17:55 IST" duration-ms="8507" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,120 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.testClasses.TC_LoginTest_001@691a7f8f]" started-at="2021-03-02T16:19:18 IST" name="loginTest" finished-at="2021-03-02T16:19:26 IST" duration-ms="7920" status="PASS">
+        <test-method signature="counterTest()[pri:0, instance:com.testClasses.TC_AzureWebAppTest@214b199c]" started-at="2021-03-03T16:17:55 IST" name="counterTest" finished-at="2021-03-03T16:18:01 IST" duration-ms="6512" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testClasses.TC_LoginTest_001@691a7f8f]" started-at="2021-03-02T16:19:26 IST" name="tearDown" finished-at="2021-03-02T16:19:28 IST" duration-ms="1614" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testClasses.TC_LoginTest_001 -->
-    </test> <!-- MyTest -->
-    <test started-at="2021-03-02T16:19:30 IST" name="MyTest2" finished-at="2021-03-02T16:19:46 IST" duration-ms="16090">
-      <class name="com.testClasses.TC_DataDrivenTest">
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@60611244]" started-at="2021-03-02T16:19:46 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr164225]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jahetAp]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@60611244]" started-at="2021-03-02T16:19:46 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:46 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr83460]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qAbUzyj]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@60611244]" started-at="2021-03-02T16:19:46 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:46 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr137319]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[bAdYvyb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@60611244]" started-at="2021-03-02T16:19:46 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:46 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr164225]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jahetAp]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="Test(java.lang.String, java.lang.String)[pri:0, instance:com.testClasses.TC_DataDrivenTest@60611244]" started-at="2021-03-02T16:19:46 IST" name="Test" data-provider="LoginData" finished-at="2021-03-02T16:19:46 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr112909]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tytUreg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-      </class> <!-- com.testClasses.TC_DataDrivenTest -->
-      <class name="com.testClasses.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.testClasses.TC_LoginTest_001@45dd4eda]" started-at="2021-03-02T16:19:30 IST" name="setup" finished-at="2021-03-02T16:19:38 IST" duration-ms="7678" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.testClasses.TC_LoginTest_001@45dd4eda]" started-at="2021-03-02T16:19:38 IST" name="loginTest" finished-at="2021-03-02T16:19:44 IST" duration-ms="6496" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testClasses.TC_LoginTest_001@45dd4eda]" started-at="2021-03-02T16:19:44 IST" name="tearDown" finished-at="2021-03-02T16:19:45 IST" duration-ms="1196" status="PASS">
+        </test-method> <!-- counterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testClasses.TC_AzureWebAppTest@214b199c]" started-at="2021-03-03T16:18:01 IST" name="tearDown" finished-at="2021-03-03T16:18:03 IST" duration-ms="1678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testClasses.TC_LoginTest_001 -->
-    </test> <!-- MyTest2 -->
+      </class> <!-- com.testClasses.TC_AzureWebAppTest -->
+    </test> <!-- MyCounterTest -->
   </suite> <!-- MyAutomationSuit -->
 </testng-results>

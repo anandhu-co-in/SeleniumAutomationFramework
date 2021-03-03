@@ -43,7 +43,7 @@ public class BaseClass {
 
     @Parameters("browser")
     @BeforeMethod
-    public void setup(String browser) {
+    public void setup(@Optional("chrome") String browser) {
 
         if (browser.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", readconfig.gerConfig("chromepath"));

@@ -70,21 +70,21 @@ public class ExcelUtilities {
         return data;
     }
 
-//    //write data to cell
-//    public static void setCellData(String xlfile,String xlsheet,int rownum,int colnum,String data) throws IOException
-//    {
-//        fi=new FileInputStream(xlfile);
-//        wb=new XSSFWorkbook(fi);
-//        ws=wb.getSheet(xlsheet);
-//        row=ws.getRow(rownum);
-//        cell=row.createCell(colnum);
-//        cell.setCellValue(data);
-//        fo=new FileOutputStream(xlfile);
-//        wb.write(fo);
-//        wb.close();
-//        fi.close();
-//        fo.close();
-//    }
+    //write data to cell
+    public static void setCellData(String xlfile,String xlsheet,int rownum,int colnum,String data) throws IOException
+    {
+        fi=new FileInputStream(xlfile);
+        wb=new XSSFWorkbook(fi);
+        ws=wb.getSheet(xlsheet);
+        row=ws.getRow(rownum);
+        cell=row.createCell(colnum);
+        cell.setCellValue(data);
+        fo=new FileOutputStream(xlfile);
+        wb.write(fo);
+        wb.close();
+        fi.close();
+        fo.close();
+    }
 
 
 }

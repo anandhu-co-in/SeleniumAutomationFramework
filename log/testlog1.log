@@ -60,3 +60,6 @@
 2021-03-02 17:14:12,712 [main] INFO LoggerName - URL is opened
 2021-03-02 17:14:13,381 [main] INFO LoggerName - Entered username and password
 2021-03-02 17:14:13,399 [main] INFO LoggerName - Test Passed
+2021-03-02 18:45:59,000 [main] INFO LoggerName - URL is opened
+2021-03-02 18:45:59,583 [main] INFO LoggerName - Entered username and password
+2021-03-02 18:45:59,604 [main] INFO LoggerName - Test Passed
