@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MyAutomationSuit" class="navigator-link">
-              <span class="suite-name border-passed">MyAutomationSuit</span>
+              <span class="suite-name border-failed">MyAutomationSuit</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-MyAutomationSuit" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MyAutomationSuit" class="hide-methods failed suite-MyAutomationSuit"> (hide)</a> <!-- hide-methods failed suite-MyAutomationSuit -->
+                      <a href="#" panel-name="suite-MyAutomationSuit" class="show-methods failed suite-MyAutomationSuit"> (show)</a> <!-- show-methods failed suite-MyAutomationSuit -->
+                    </span>
+                    <div class="method-list-content failed suite-MyAutomationSuit">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyAutomationSuit" title="com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven" class="method navigator-link" hash-for-method="Test(4, 5)">Test(4, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MyAutomationSuit -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,32 @@
                     <div class="method-list-content passed suite-MyAutomationSuit">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyAutomationSuit" title="com.testClasses.TC_AzureWebAppTest" class="method navigator-link" hash-for-method="counterTest">counterTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MyAutomationSuit" title="com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven" class="method navigator-link" hash-for-method="Test(1, 1)">Test(1, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyAutomationSuit" title="com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven" class="method navigator-link" hash-for-method="Test(2, 2)">Test(2, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyAutomationSuit" title="com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven" class="method navigator-link" hash-for-method="Test(3, 3)">Test(3, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyAutomationSuit" title="com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven" class="method navigator-link" hash-for-method="Test(20, 20)">Test(20, 20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyAutomationSuit" title="com.testClasses.TC_002_VerifyCounterWorks" class="method navigator-link" hash-for-method="counterTest">counterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyAutomationSuit" title="com.testClasses.TC_001_VerifyAppTitle" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MyAutomationSuit -->
@@ -119,10 +158,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MyAutomationSuit" class="panel MyAutomationSuit">
+          <div class="suite-MyAutomationSuit-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test(4, 5)">
+                  </a> <!-- Test(4, 5) -->
+                  <span class="method-name">Test</span>
+                  <span class="parameters">(4, 5)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven.Test(TC_003_VerifyCountIsCorrect_DataDriven.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyAutomationSuit-class-failed -->
           <div class="suite-MyAutomationSuit-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.testClasses.TC_AzureWebAppTest</span>
+              <span class="class-name">com.testClasses.TC_002_VerifyCounterWorks</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -130,6 +190,61 @@
                   <a name="counterTest">
                   </a> <!-- counterTest -->
                   <span class="method-name">counterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyAutomationSuit-class-passed -->
+          <div class="suite-MyAutomationSuit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test(1, 1)">
+                  </a> <!-- Test(1, 1) -->
+                  <span class="method-name">Test</span>
+                  <span class="parameters">(1, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test(2, 2)">
+                  </a> <!-- Test(2, 2) -->
+                  <span class="method-name">Test</span>
+                  <span class="parameters">(2, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test(3, 3)">
+                  </a> <!-- Test(3, 3) -->
+                  <span class="method-name">Test</span>
+                  <span class="parameters">(3, 3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test(20, 20)">
+                  </a> <!-- Test(20, 20) -->
+                  <span class="method-name">Test</span>
+                  <span class="parameters">(20, 20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyAutomationSuit-class-passed -->
+          <div class="suite-MyAutomationSuit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testClasses.TC_001_VerifyAppTitle</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,12 +262,18 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.utilities.ExtendReportListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;MyCounterTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;VerifyCounterTitle&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testClasses.TC_AzureWebAppTest&quot;/&gt;
+      &lt;class name=&quot;com.testClasses.TC_001_VerifyAppTitle&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- MyCounterTest --&gt;
+  &lt;/test&gt; &lt;!-- VerifyCounterTitle --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;VerifyCounterFunctionality&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testClasses.TC_002_VerifyCounterWorks&quot;/&gt;
+      &lt;class name=&quot;com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- VerifyCounterFunctionality --&gt;
 &lt;/suite&gt; &lt;!-- MyAutomationSuit --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,7 +285,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">MyCounterTest (1 class)</span>
+                <span class="test-name">VerifyCounterTitle (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">VerifyCounterFunctionality (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,16 +314,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'counterTest')
-data.setCell(0, 2, 'com.testClasses.TC_AzureWebAppTest')
-data.setCell(0, 3, 6677);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.testClasses.TC_001_VerifyAppTitle')
+data.setCell(0, 3, 1961);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Test')
+data.setCell(1, 2, 'com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven')
+data.setCell(1, 3, 1650);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'counterTest')
+data.setCell(2, 2, 'com.testClasses.TC_002_VerifyCounterWorks')
+data.setCell(2, 3, 1443);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Test')
+data.setCell(3, 2, 'com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven')
+data.setCell(3, 3, 1428);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Test')
+data.setCell(4, 2, 'com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven')
+data.setCell(4, 3, 1352);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Test')
+data.setCell(5, 2, 'com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven')
+data.setCell(5, 3, 1292);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Test')
+data.setCell(6, 2, 'com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven')
+data.setCell(6, 3, 1195);
 window.suiteTableData['MyAutomationSuit']= { tableData: data, tableDiv: 'times-div-MyAutomationSuit'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-MyAutomationSuit">
               </div> <!-- times-div-MyAutomationSuit -->
             </div> <!-- times-div -->
@@ -214,9 +362,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MyAutomationSuit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">suitStartSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-MyAutomationSuit" class="panel">
@@ -225,22 +380,105 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testClasses.TC_AzureWebAppTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.testClasses.TC_002_VerifyCounterWorks</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">suitStartSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testClasses.TC_001_VerifyAppTitle</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">968 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">counterTest</span>
-                <span class="method-start">14139 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">8666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20912 ms</span>
+                <span class="method-start">10681 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testClasses.TC_002_VerifyCounterWorks</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">12459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">counterTest</span>
+                <span class="method-start">19987 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21453 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">24895 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test(1, 1)</span>
+                <span class="method-start">33279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34733 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">35823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test(2, 2)</span>
+                <span class="method-start">41882 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">43214 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">44157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test(3, 3)</span>
+                <span class="method-start">49822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">51032 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">51947 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test(4, 5)</span>
+                <span class="method-start">57912 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">60640 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test(20, 20)</span>
+                <span class="method-start">67069 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68732 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

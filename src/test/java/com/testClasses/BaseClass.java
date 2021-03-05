@@ -37,7 +37,7 @@ public class BaseClass {
     public void suitStartSetup() {
         System.out.println("Executing beforesuit");
         logger = Logger.getLogger("LoggerName");
-        PropertyConfigurator.configure("log4j.properties");
+        PropertyConfigurator.configure("Configuration/log4j.properties");
         createExtendReport();
     }
 
@@ -48,6 +48,7 @@ public class BaseClass {
         if (browser.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", readconfig.gerConfig("chromepath"));
             driver = new ChromeDriver();
+            driver.manage().window().maximize();
         } else {
             throw new RuntimeException("The specified browser is not supported by the framework : " + browser);
         }
@@ -62,7 +63,7 @@ public class BaseClass {
     //Create Report
     public void createExtendReport()  {
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
-        String repName = "Test-Report-" + timeStamp + ".html";
+        String repName = "ExtentReports_" + timeStamp + ".html";
         ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/TestResults/" + repName);
         extent = new ExtentReports();
         extent.attachReporter(spark);
@@ -74,14 +75,13 @@ public class BaseClass {
         spark.config().setTheme(Theme.STANDARD);
     }
 
-    //Utility Methods
-    public void captureScreen(WebDriver driver, String tname) throws IOException {
+    //Take screenshot
+    public void captureScreen(WebDriver driver, String screenshotFullPath) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        File target = new File(System.getProperty("user.dir") + "/TestResults/Screenshots/" + tname + ".png");
+        File target = new File(screenshotFullPath);
         FileUtils.copyFile(source, target);
         System.out.println("Screenshot taken");
     }
-
 
 }

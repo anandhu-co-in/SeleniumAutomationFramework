@@ -7,25 +7,17 @@
         <listener class-name="com.utilities.ExtendReportListeners" />
     </listeners>
 
-<!--    <test name="MyTest">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <classes>-->
-<!--            <class name="com.testClasses.TC_LoginTest_001"/>-->
-<!--            <class name="com.testClasses.TC_DataDrivenTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="MyTest2">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <classes>-->
-<!--&lt;!&ndash;            <class name="com.testClasses.TC_LoginTest_001"/>&ndash;&gt;-->
-<!--            <class name="com.testClasses.TC_DataDrivenTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-    <test name="MyCounterTest">
+    <test name="VerifyCounterTitle">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.testClasses.TC_AzureWebAppTest"/>
+            <class name="com.testClasses.TC_001_VerifyAppTitle"/>
+        </classes>
+    </test>
+
+    <test name="VerifyCounterFunctionality">
+        <classes>
+            <class name="com.testClasses.TC_002_VerifyCounterWorks"/>
+            <class name="com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven"/>
         </classes>
     </test>
 

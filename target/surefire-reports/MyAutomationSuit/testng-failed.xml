@@ -4,30 +4,16 @@
   <listeners>
     <listener class-name="com.utilities.ExtendReportListeners"/>
   </listeners>
-  <test thread-count="5" name="MyTest(failed)" verbose="0">
-    <parameter name="browser" value="chromess"/>
+  <test thread-count="5" name="VerifyCounterFunctionality(failed)" verbose="0">
     <classes>
-      <class name="com.testClasses.TC_DataDrivenTest">
+      <class name="com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven">
         <methods>
-          <include name="Test"/>
           <include name="suitStartSetup"/>
           <include name="setup"/>
+          <include name="Test" invocation-numbers="3"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.testClasses.TC_DataDrivenTest -->
+      </class> <!-- com.testClasses.TC_003_VerifyCountIsCorrect_DataDriven -->
     </classes>
-  </test> <!-- MyTest(failed) -->
-  <test thread-count="5" name="MyTest2(failed)" verbose="0">
-    <parameter name="browser" value="chromes"/>
-    <classes>
-      <class name="com.testClasses.TC_DataDrivenTest">
-        <methods>
-          <include name="Test"/>
-          <include name="suitStartSetup"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.testClasses.TC_DataDrivenTest -->
-    </classes>
-  </test> <!-- MyTest2(failed) -->
+  </test> <!-- VerifyCounterFunctionality(failed) -->
 </suite> <!-- Failed suite [MyAutomationSuit] -->
