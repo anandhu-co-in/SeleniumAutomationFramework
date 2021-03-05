@@ -46,6 +46,8 @@ public class ExtendReportListeners extends BaseClass implements ITestListener {
 
         if (f.exists()) {
             try {
+                //The below one line, I added it to make the screenshot path in the html file relative. So i can move the folder
+                screenshotPath=screenshotPath.replace(System.getProperty("user.dir") + "\\TestResults\\","");
                 extendReportLogger.fail("Failure Screenshot", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
             } catch (Exception e) {
                 logger.info("Failed to attach screenshot to extend report" + e.getLocalizedMessage());
