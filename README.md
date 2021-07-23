@@ -4,7 +4,7 @@ Selenium Test Automation Framework
 
 Components involved :
 
-Selenium
-TestNG
-ExtendReports
+Selenium,
+TestNG,
+ExtendReports,
 Maven
